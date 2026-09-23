@@ -34,6 +34,11 @@
   .sinal{font-size:.95rem;background:var(--brand-soft);border:1px solid var(--brand);border-radius:10px;padding:9px 12px}
   .cbody ul{margin:0;padding-left:18px;font-size:.9rem}
   .cbody li{margin:3px 0}
+  .fis{font-size:.9rem;margin:0}
+  .two{display:grid;grid-template-columns:1fr;gap:11px}
+  @media(min-width:520px){.two{grid-template-columns:1fr 1fr}}
+  .comp .lab{color:var(--amber)}
+  .extra{font-size:.86rem;background:var(--surface-2);border-left:3px solid var(--amber);border-radius:8px;padding:8px 11px;margin:0}
   .dx{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:4px}
   .dx>div{background:var(--surface-2);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:.82rem}
   .dx span{display:block;font-size:.63rem;text-transform:uppercase;letter-spacing:.05em;font-weight:700;color:var(--amber);margin-bottom:2px}
@@ -46,7 +51,7 @@
     <h1>Atlas de Radiologia — Correlação Anátomo-Clínica</h1>
     <div class="sub">Prática Clínica II · Digestório — radiografia por radiografia, das suas anotações + aula da Cidinha</div>
   </div>
-  <nav class="nav"><a href="#caso1" class="fbtn">1. Fecaloma</a><a href="#caso2" class="fbtn">2. Vólvulo</a><a href="#caso3" class="fbtn">3. Acalasia</a><a href="#caso4" class="fbtn">4. Carcinoma de esôfago</a><a href="#caso5" class="fbtn">5. Doença diverticular</a><a href="#caso6" class="fbtn">6. Abdome agudo obstrutivo</a><a href="#caso7" class="fbtn">7. Pneumoperitônio</a><a href="#caso8" class="fbtn">8. Abdome agudo — desfecho</a><a href="#caso9" class="fbtn">9. Pâncreas: pancreatite crônica, câncer e colelitíase</a><a href="#caso10" class="fbtn">10. Esteatose hepática</a><a href="#caso11" class="fbtn">11. Cirrose e hipertensão portal</a><a href="#caso12" class="fbtn">12. Endocardite → infarto</a></nav>
+  <nav class="nav"><a href="#caso1" class="fbtn">1. Fecaloma</a><a href="#caso2" class="fbtn">2. Vólvulo</a><a href="#caso3" class="fbtn">3. Acalasia</a><a href="#caso4" class="fbtn">4. Carcinoma de esôfago</a><a href="#caso5" class="fbtn">5. Doença diverticular</a><a href="#caso6" class="fbtn">6. Abdome agudo obstrutivo</a><a href="#caso7" class="fbtn">7. Pneumoperitônio</a><a href="#caso8" class="fbtn">8. Abdome agudo — substrato final</a><a href="#caso9" class="fbtn">9. Pâncreas: pancreatite crônica, câncer e colelitíase</a><a href="#caso10" class="fbtn">10. Esteatose hepática</a><a href="#caso11" class="fbtn">11. Cirrose e hipertensão portal</a><a href="#caso12" class="fbtn">12. Endocardite → infarto</a></nav>
 </header>
 <main><div class="wrap">
   <div class="note">Um card por <b>imagem/caso</b> da aula de correlação. As figuras são <b>esquemas didáticos</b> do sinal (não as imagens reais da prova) — servem para você <b>ler e ver</b> junto. Para cada caso: o que aparece na imagem, a clínica, os pontos-chave e os <b>4 diagnósticos</b> (sindrômico · anatômico · etiológico · funcional).</div>
@@ -55,22 +60,32 @@
   <div class="cgrid">
     <figure class="cimg"><svg viewBox="0 0 280 200" class="scan"><g fill="none" stroke="#cdd8d5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="10" width="256" height="180" rx="16" stroke="#3a4a47"/><path d="M96 92 Q150 78 198 104 Q210 152 150 168 Q98 164 90 128 Z" fill="#39423f" stroke="#cdd8d5"/></g><g stroke="none" fill="#e8eeec"><circle cx="118" cy="112" r="2.3"/><circle cx="134" cy="104" r="2.1"/><circle cx="150" cy="116" r="2.6"/><circle cx="166" cy="110" r="2"/><circle cx="128" cy="126" r="2.4"/><circle cx="148" cy="134" r="2.1"/><circle cx="168" cy="128" r="2.3"/><circle cx="112" cy="132" r="1.9"/><circle cx="158" cy="150" r="2.2"/><circle cx="134" cy="150" r="2"/><circle cx="176" cy="140" r="1.8"/><circle cx="120" cy="150" r="1.8"/></g></svg></figure>
     <div class="cbody">
-      <p class="sinal"><span class="lab">Na imagem</span>Sinal do “sal e pimenta” — massa fecal com bolhas de gás entremeadas, no <b>sigmoide</b> (o mais acometido).</p>
-      <div class="blk"><span class="lab">Caso / clínica</span><ul><li>Dor abdominal, distensão, empachamento e <b>redução gradual do hábito intestinal</b> (constipação que piora ao longo de meses).</li><li>Megacólon <b>chagásico</b>: destruição do <b>plexo mientérico</b> → o intestino não faz a motilidade para evacuar. Agente: <i>Trypanosoma cruzi</i>.</li><li>Pode evoluir com <b>necrose da alça, perfuração e abdome agudo</b> — mas pode não ter a clínica clássica de abdome agudo.</li></ul></div>
-      <div class="blk"><span class="lab">Pontos-chave</span><ul><li>Exame físico (suas anotações): <b>sinal de Krebs</b> e <b>sinal do esparadrapo</b>. (Padrão clássico do fecaloma: sinal de Gersuny — crepitação da massa à palpação.)</li></ul></div>
-      <div class="dx"><div><span>Sindrômico</span>Constipação / suboclusão</div><div><span>Anatômico</span>Sigmoide (cólon)</div><div><span>Etiológico</span>Doença de Chagas (megacólon)</div><div><span>Funcional</span>Aperistalse por lesão do plexo mientérico</div></div>
+      <p class="sinal"><span class="lab">Na imagem</span>Sinal do “sal e pimenta” — massa fecal com bolhas de gás entremeadas, no <b>sigmoide</b> (o segmento mais acometido).</p>
+      <div class="blk"><span class="lab">Fisiopatologia</span><p class="fis">A <i>Trypanosoma cruzi</i> destrói o <b>plexo mientérico (de Auerbach)</b> → o cólon perde a motilidade (aperistalse) → estase e ressecamento das fezes → dilatação (megacólon) e formação do <b>fecaloma</b>.</p></div>
+      <div class="two">
+        <div class="blk"><span class="lab">Sintomas</span><ul><li>Constipação <b>progressiva</b> (de evacuar todo dia → a cada 5 → a cada 15 dias)</li><li>Distensão, empachamento e dor abdominal</li></ul></div>
+        <div class="blk"><span class="lab">Sinais</span><ul><li>Massa fecal palpável (fossa ilíaca esquerda)</li><li>Toque retal: ampola cheia de fezes endurecidas</li><li>Anotações da aula: <b>sinal de Krebs</b> e <b>sinal do esparadrapo</b> (clássico do fecaloma: sinal de Gersuny — crepitação à palpação)</li></ul></div>
+      </div>
+      <div class="blk comp"><span class="lab">Complicações</span><ul><li>Suboclusão/obstrução</li><li><b>Vólvulo de sigmoide</b></li><li>Necrose da alça, perfuração e abdome agudo (peritonite)</li></ul></div>
+      
+      <div class="blk"><span class="lab">Diagnósticos</span><div class="dx"><div><span>Sindrômico</span>Constipação / suboclusão</div><div><span>Anatômico</span>Sigmoide (cólon)</div><div><span>Etiológico</span>Doença de Chagas (megacólon)</div><div><span>Funcional</span>Aperistalse por lesão do plexo mientérico</div></div></div>
     </div>
   </div>
 </article>
 <article class="case" id="caso2">
-  <div class="chead"><span class="cn">2</span><h2>Vólvulo (torção de alça)</h2><span class="tag">Radiografia / esofagograma com bário</span></div>
+  <div class="chead"><span class="cn">2</span><h2>Vólvulo (torção de alça)</h2><span class="tag">Radiografia / trânsito com bário</span></div>
   <div class="cgrid">
     <figure class="cimg"><svg viewBox="0 0 280 200" class="scan"><g fill="none" stroke="#cdd8d5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="10" width="256" height="180" rx="16" stroke="#3a4a47"/><path d="M62 168 Q48 44 140 44 Q232 44 218 168" stroke-width="2.5"/><path d="M140 48 Q153 108 140 166" stroke="#eaf1ef" stroke-width="3.4"/><line x1="62" y1="168" x2="218" y2="168"/></g></svg></figure>
     <div class="cbody">
-      <p class="sinal"><span class="lab">Na imagem</span>Alça intestinal <b>se cruzando/torcendo</b> sobre o mesentério, causando obstrução — aspecto de “grão de café”.</p>
-      <div class="blk"><span class="lab">Caso / clínica</span><ul><li>Contraste usado: <b>sulfato de bário</b>.</li><li>Dor e <b>ruído (timbre) metálico</b>.</li><li><b>Simula um abdome agudo</b> obstrutivo.</li></ul></div>
-      <div class="blk"><span class="lab">Pontos-chave</span><ul><li>A torção pode estrangular o pedículo vascular → risco de isquemia/infarto da alça.</li></ul></div>
-      <div class="dx"><div><span>Sindrômico</span>Abdome agudo obstrutivo</div><div><span>Anatômico</span>Sigmoide</div><div><span>Etiológico</span>Vólvulo (sobre megacólon)</div><div><span>Funcional</span>Obstrução ± sofrimento vascular</div></div>
+      <p class="sinal"><span class="lab">Na imagem</span>Alça <b>torcida sobre o mesentério</b> (aspecto de “grão de café”); o bário mostra a alça se cruzando e obstruindo.</p>
+      <div class="blk"><span class="lab">Fisiopatologia</span><p class="fis">A alça (em geral o sigmoide, sobre megacólon) <b>gira no eixo mesentérico</b> → obstrução <b>em alça fechada</b> + compressão do pedículo vascular → isquemia progressiva.</p></div>
+      <div class="two">
+        <div class="blk"><span class="lab">Sintomas</span><ul><li>Dor em cólica de início súbito</li><li>Distensão importante, parada de eliminação de fezes e gases, vômitos</li></ul></div>
+        <div class="blk"><span class="lab">Sinais</span><ul><li><b>Ruído (timbre) metálico</b> à ausculta</li><li>Distensão assimétrica; Blumberg se houver peritonite</li></ul></div>
+      </div>
+      <div class="blk comp"><span class="lab">Complicações</span><ul><li>Isquemia → <b>infarto e necrose</b> da alça</li><li>Perfuração, peritonite e choque</li></ul></div>
+      
+      <div class="blk"><span class="lab">Diagnósticos</span><div class="dx"><div><span>Sindrômico</span>Abdome agudo obstrutivo</div><div><span>Anatômico</span>Sigmoide</div><div><span>Etiológico</span>Vólvulo (sobre megacólon)</div><div><span>Funcional</span>Obstrução em alça fechada ± sofrimento vascular</div></div></div>
     </div>
   </div>
 </article>
@@ -79,10 +94,15 @@
   <div class="cgrid">
     <figure class="cimg"><svg viewBox="0 0 280 200" class="scan"><g fill="none" stroke="#cdd8d5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="10" width="256" height="180" rx="16" stroke="#3a4a47"/><path d="M96 26 C82 78 86 128 128 156 L140 176 L152 156 C194 128 198 78 184 26" fill="#cfd9d6" fill-opacity="0.85" stroke="#eaf1ef" stroke-width="2"/><line x1="100" y1="46" x2="180" y2="46" stroke="#0c1212" stroke-width="3"/><line x1="176" y1="120" x2="212" y2="108" stroke="#f2c67a"/><text x="196" y="102" fill="#f2c67a" font-size="11" stroke="none">bico</text></g></svg></figure>
     <div class="cbody">
-      <p class="sinal"><span class="lab">Na imagem</span><b>Sinal do rabo do rato</b> (ou bico de pássaro): afilamento distal por <b>não relaxamento do esfíncter inferior</b>. Esôfago dilatado acima, com <b>ondas terciárias</b>.</p>
-      <div class="blk"><span class="lab">Caso / clínica</span><ul><li><b>Disfagia progressiva de anos</b>: começou engasgando com pão (sólidos) e foi só conseguindo engolir pastoso; oscila (períodos de melhora).</li><li>Regurgitação; sensação de que o alimento “para” na entrada do estômago; dor só quando há esofagite.</li></ul></div>
-      <div class="blk"><span class="lab">Pontos-chave</span><ul><li><b>Semiogênese das ondas terciárias</b>: contração desordenada da camada muscular por destruição dos plexos mioentéricos.</li><li><b>Semiogênese do rabo do rato</b>: o esfíncter esofágico inferior não relaxa por deficiência dos plexos mioentéricos.</li><li>Acalasia = distúrbio motor; o esfíncter inferior não relaxa e as contrações perdem a coordenação. Causa importante: <b>doença de Chagas</b>.</li></ul></div>
-      <div class="dx"><div><span>Sindrômico</span>Disfagia (motora)</div><div><span>Anatômico</span>Esôfago (esfíncter inferior)</div><div><span>Etiológico</span>Acalasia / Chagas</div><div><span>Funcional</span>Falta de relaxamento + aperistalse</div></div>
+      <p class="sinal"><span class="lab">Na imagem</span><b>Sinal do rabo do rato / bico de pássaro</b>: afilamento distal por não relaxamento do esfíncter inferior; esôfago dilatado acima, com <b>ondas terciárias</b>.</p>
+      <div class="blk"><span class="lab">Fisiopatologia</span><p class="fis">Destruição/deficiência dos <b>plexos mioentéricos</b> → o esfíncter esofágico inferior <b>não relaxa</b> e a musculatura se contrai de forma <b>desordenada (ondas terciárias)</b> → estase e dilatação (megaesôfago). Causa importante: <b>doença de Chagas</b>.</p></div>
+      <div class="two">
+        <div class="blk"><span class="lab">Sintomas</span><ul><li><b>Disfagia progressiva de anos</b>, oscilante (sólidos → pastoso → líquidos); melhora em períodos</li><li>Regurgitação; sensação de o alimento “parar” na entrada do estômago</li><li>Dor só quando há esofagite</li></ul></div>
+        <div class="blk"><span class="lab">Sinais</span><ul><li>Bico de pássaro no esofagograma</li><li>Nível hidroaéreo no esôfago dilatado (retenção de alimento)</li><li>Emagrecimento</li></ul></div>
+      </div>
+      <div class="blk comp"><span class="lab">Complicações</span><ul><li>Esofagite de estase</li><li>Aspiração / pneumonia</li><li>Desnutrição e <b>risco aumentado de carcinoma de esôfago</b></li></ul></div>
+      
+      <div class="blk"><span class="lab">Diagnósticos</span><div class="dx"><div><span>Sindrômico</span>Disfagia (motora)</div><div><span>Anatômico</span>Esôfago (esfíncter inferior)</div><div><span>Etiológico</span>Acalasia / Chagas</div><div><span>Funcional</span>Falta de relaxamento + aperistalse</div></div></div>
     </div>
   </div>
 </article>
@@ -91,10 +111,15 @@
   <div class="cgrid">
     <figure class="cimg"><svg viewBox="0 0 280 200" class="scan"><g fill="none" stroke="#cdd8d5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="10" width="256" height="180" rx="16" stroke="#3a4a47"/><path d="M112 22 L112 74 C126 82 124 96 138 84 C150 74 150 92 168 84 L168 22" fill="#cfd9d6" fill-opacity=".85" stroke="#eaf1ef"/><path d="M112 178 L112 118 C124 110 128 100 140 110 C154 120 156 104 168 112 L168 178" fill="#cfd9d6" fill-opacity=".85" stroke="#eaf1ef"/><line x1="176" y1="98" x2="214" y2="98" stroke="#f2c67a"/><text x="182" y="92" fill="#f2c67a" font-size="10" stroke="none">estenose</text></g></svg></figure>
     <div class="cbody">
-      <p class="sinal"><span class="lab">Na imagem</span><b>“Mordida de maçã”</b> — estenose irregular com <b>falha de enchimento</b> (o tumor obstrui a luz).</p>
-      <div class="blk"><span class="lab">Caso / clínica</span><ul><li>Tipo: <b>carcinoma de células escamosas (epidermoide)</b> nas células do esôfago; o adenocarcinoma é o que cresce em glândulas.</li><li><b>Disfagia progressiva em MESES</b> (≠ anos do megaesôfago) — é o dado que diferencia do megaesôfago.</li><li>Fatores de risco: <b>álcool, chimarrão (bebida quente) e tabaco</b>.</li></ul></div>
-      <div class="blk"><span class="lab">Pontos-chave</span><ul><li>Complicações: <b>invasão da traqueia por contiguidade</b> (fístula) → tosse com secreção, resto de alimento, broncoespasmo e sibilância.</li><li>A necrose é um elemento da neoplasia/inflamação (patologia geral).</li></ul></div>
-      <div class="dx"><div><span>Sindrômico</span>Disfagia (obstrutiva)</div><div><span>Anatômico</span>Esôfago</div><div><span>Etiológico</span>Carcinoma de células escamosas</div><div><span>Funcional</span>Obstrução mecânica da luz</div></div>
+      <p class="sinal"><span class="lab">Na imagem</span><b>“Mordida de maçã”</b> — estenose <b>irregular</b> com <b>falha de enchimento</b> (o tumor estreita a luz).</p>
+      <div class="blk"><span class="lab">Fisiopatologia</span><p class="fis">Neoplasia maligna da mucosa: <b>carcinoma de células escamosas (epidermoide)</b> nas células do esôfago (o adenocarcinoma é o que cresce em glândulas). Cresce e estreita a luz de forma irregular; a <b>necrose</b> é um elemento da neoplasia.</p></div>
+      <div class="two">
+        <div class="blk"><span class="lab">Sintomas</span><ul><li><b>Disfagia progressiva em MESES</b> (≠ anos do megaesôfago), de sólidos para líquidos</li><li>Perda de peso, regurgitação</li><li>Tosse com secreção/resto de alimento, broncoespasmo e sibilância (se fístula para a traqueia)</li></ul></div>
+        <div class="blk"><span class="lab">Sinais</span><ul><li>Emagrecimento; falha de enchimento no esofagograma</li><li>Fatores de risco: <b>álcool, chimarrão (bebida quente) e tabaco</b></li></ul></div>
+      </div>
+      <div class="blk comp"><span class="lab">Complicações</span><ul><li><b>Invasão da traqueia por contiguidade</b> → fístula traqueoesofágica</li><li>Obstrução completa, hemorragia, metástases</li></ul></div>
+      
+      <div class="blk"><span class="lab">Diagnósticos</span><div class="dx"><div><span>Sindrômico</span>Disfagia (obstrutiva)</div><div><span>Anatômico</span>Esôfago</div><div><span>Etiológico</span>Carcinoma de células escamosas</div><div><span>Funcional</span>Obstrução mecânica da luz</div></div></div>
     </div>
   </div>
 </article>
@@ -103,10 +128,15 @@
   <div class="cgrid">
     <figure class="cimg"><svg viewBox="0 0 280 200" class="scan"><g fill="none" stroke="#cdd8d5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="10" width="256" height="180" rx="16" stroke="#3a4a47"/><path d="M30 84 Q140 60 250 84" /><path d="M30 118 Q140 142 250 118" /><g fill="#cfd9d6" fill-opacity=".7" stroke="#cdd8d5"><circle cx="72" cy="70" r="10"/><circle cx="118" cy="64" r="9"/><circle cx="170" cy="64" r="10"/><circle cx="212" cy="70" r="9"/><circle cx="96" cy="132" r="9"/><circle cx="150" cy="136" r="10"/><circle cx="196" cy="132" r="9"/></g></svg></figure>
     <div class="cbody">
-      <p class="sinal"><span class="lab">Na imagem</span>Múltiplas <b>bolsas (divertículos)</b> na parede do cólon (herniação de mucosa/submucosa).</p>
-      <div class="blk"><span class="lab">Caso / clínica</span><ul><li><b>Só dá sintoma quando inflama (diverticulite)</b>: pode ter <b>enterorragia/hematoquezia</b>, dor em cólica, em peso ou em pontada.</li></ul></div>
-      <div class="blk"><span class="lab">Pontos-chave</span><ul><li><b>Hipertônica</b> → mais <b>perfuração</b>; <b>hipotônica</b> → mais <b>inflamação</b>.</li></ul></div>
-      <div class="dx"><div><span>Sindrômico</span>Dor abdominal ± sangramento</div><div><span>Anatômico</span>Cólon (sigmoide)</div><div><span>Etiológico</span>Doença diverticular / diverticulite</div><div><span>Funcional</span>Inflamação/perfuração do divertículo</div></div>
+      <p class="sinal"><span class="lab">Na imagem</span>Múltiplas <b>bolsas (divertículos)</b> projetando-se da parede do cólon.</p>
+      <div class="blk"><span class="lab">Fisiopatologia</span><p class="fis">Aumento da <b>pressão intraluminal</b> (dieta pobre em fibras) → herniação da <b>mucosa e submucosa</b> pelos pontos frágeis da muscular (onde entram os vasos) = <b>pseudodivertículos</b>. <b>Hipertônica</b> → mais perfuração; <b>hipotônica</b> → mais inflamação.</p></div>
+      <div class="two">
+        <div class="blk"><span class="lab">Sintomas</span><ul><li>Em geral <b>assintomática</b></li><li>Na diverticulite: dor (cólica, peso ou pontada) em fossa ilíaca esquerda, febre</li><li><b>Enterorragia / hematoquezia</b></li></ul></div>
+        <div class="blk"><span class="lab">Sinais</span><ul><li>Dor à palpação em fossa ilíaca esquerda ± massa</li><li>Febre e leucocitose (diverticulite)</li></ul></div>
+      </div>
+      <div class="blk comp"><span class="lab">Complicações</span><ul><li>Diverticulite, <b>abscesso pericólico</b></li><li>Perfuração/peritonite, fístula</li><li>Hemorragia; estenose por reparo (simula câncer)</li></ul></div>
+      
+      <div class="blk"><span class="lab">Diagnósticos</span><div class="dx"><div><span>Sindrômico</span>Dor abdominal ± sangramento</div><div><span>Anatômico</span>Cólon (sigmoide)</div><div><span>Etiológico</span>Doença diverticular / diverticulite</div><div><span>Funcional</span>Inflamação/perfuração do divertículo</div></div></div>
     </div>
   </div>
 </article>
@@ -115,10 +145,15 @@
   <div class="cgrid">
     <figure class="cimg"><svg viewBox="0 0 280 200" class="scan"><g fill="none" stroke="#cdd8d5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="10" width="256" height="180" rx="16" stroke="#3a4a47"/><ellipse cx="96" cy="70" rx="54" ry="22"/><line x1="46" y1="70" x2="146" y2="70" stroke="#eaf1ef" stroke-width="3.2"/><ellipse cx="158" cy="112" rx="58" ry="21"/><line x1="102" y1="113" x2="214" y2="113" stroke="#eaf1ef" stroke-width="3.2"/><ellipse cx="100" cy="152" rx="44" ry="16"/><line x1="58" y1="152" x2="142" y2="152" stroke="#eaf1ef" stroke-width="3.2"/></g></svg></figure>
     <div class="cbody">
-      <p class="sinal"><span class="lab">Na imagem</span><b>Níveis hidroaéreos</b> e alças distendidas — obstrução. (2ª imagem do caso: distensão do jejuno, alça inflamada com <b>parede espessada</b>, aderindo uma na outra.)</p>
-      <div class="blk"><span class="lab">Caso / clínica</span><ul><li>Propedêutica: <b>raio-x simples em pé e deitado</b> + <b>tórax</b> para ver pneumoperitônio.</li><li><b>Ruído metálico</b> é o mais frequente na obstrução (inflamação/perfuração podem tê-lo no início, mas o mais provável é obstrução).</li></ul></div>
-      <div class="blk"><span class="lab">Pontos-chave</span><ul><li><b>Causa mais frequente de obstrução: áscaris lumbricoides</b> (comum em crianças).</li><li><b>Cólon esquerdo</b>: emagrecimento e enterorragia; <b>cólon direito</b>: sangra mais e dá <b>anemia</b>; no <b>reto</b>: fezes em fita. Na colonoscopia: mucosa edemaciada, hiperemiada, luz diminuída.</li></ul></div>
-      <div class="dx"><div><span>Sindrômico</span>Abdome agudo (conjunto de sinais)</div><div><span>Anatômico</span>Peritônio (peritonite) / alça obstruída</div><div><span>Etiológico</span>Áscaris, tumor, brida, vólvulo…</div><div><span>Funcional</span>Interrupção do trânsito</div></div>
+      <p class="sinal"><span class="lab">Na imagem</span><b>Níveis hidroaéreos</b> e alças distendidas. (2ª imagem do caso: distensão do jejuno, alça inflamada com <b>parede espessada</b>, aderindo uma na outra.)</p>
+      <div class="blk"><span class="lab">Fisiopatologia</span><p class="fis">A obstrução mecânica acumula gás e líquido a montante → <b>distensão</b> e <b>hiperperistaltismo (peristaltismo de luta)</b>; depois há exaustão e, na alça fechada, isquemia. Propedêutica: raio-x <b>em pé e deitado</b> + <b>tórax</b> (para pneumoperitônio).</p></div>
+      <div class="two">
+        <div class="blk"><span class="lab">Sintomas</span><ul><li>Dor em cólica, distensão</li><li>Parada de eliminação de fezes e gases, vômitos</li></ul></div>
+        <div class="blk"><span class="lab">Sinais</span><ul><li><b>Ruído metálico</b> (o mais frequente na obstrução)</li><li>Ondas peristálticas visíveis; timpanismo</li></ul></div>
+      </div>
+      <div class="blk comp"><span class="lab">Complicações</span><ul><li>Isquemia/necrose, perfuração e peritonite</li><li>Desidratação e distúrbio hidroeletrolítico, sepse</li></ul></div>
+      <p class="extra"><b>Câncer colorretal:</b> cólon <b>esquerdo</b> → emagrecimento e enterorragia; cólon <b>direito</b> → sangra mais e dá <b>anemia</b>; <b>reto</b> → fezes em fita. Na colonoscopia: mucosa edemaciada, hiperemiada, luz diminuída.</p>
+      <div class="blk"><span class="lab">Diagnósticos</span><div class="dx"><div><span>Sindrômico</span>Abdome agudo (conjunto de sinais)</div><div><span>Anatômico</span>Peritônio / alça obstruída</div><div><span>Etiológico</span><b>Áscaris</b> (nº 1, crianças), tumor, brida, vólvulo</div><div><span>Funcional</span>Interrupção do trânsito</div></div></div>
     </div>
   </div>
 </article>
@@ -127,22 +162,32 @@
   <div class="cgrid">
     <figure class="cimg"><svg viewBox="0 0 280 200" class="scan"><g fill="none" stroke="#cdd8d5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="10" width="256" height="180" rx="16" stroke="#3a4a47"/><path d="M24 74 Q140 22 256 74" stroke="#eaf1ef" stroke-width="2.6"/><path d="M46 128 Q120 150 150 122 Q150 100 96 100 Q60 102 46 128 Z" fill="#7d8d89" stroke="#cdd8d5"/><path d="M52 100 Q120 82 150 100" stroke="#cdd8d5"/><line x1="150" y1="40" x2="150" y2="62" stroke="#f2c67a"/><polygon points="150,66 145,54 155,54" fill="#f2c67a" stroke="none"/><text x="158" y="52" fill="#f2c67a" font-size="13" stroke="none">ar</text></g></svg></figure>
     <div class="cbody">
-      <p class="sinal"><span class="lab">Na imagem</span><b>Ar livre subdiafragmático</b> → <b>sinal de Jobert</b> (perda da macicez hepática).</p>
-      <div class="blk"><span class="lab">Caso / clínica</span><ul><li>Abdome agudo <b>perfurativo</b>; saber diferenciar a dor do abdome agudo por perfuração, inflamação etc.</li></ul></div>
-      <div class="blk"><span class="lab">Pontos-chave</span><ul><li><b>Causa mais frequente: úlcera péptica</b>.</li><li>A <b>úlcera duodenal perfura mais</b> que a gástrica e é mais frequente.</li></ul></div>
-      <div class="dx"><div><span>Sindrômico</span>Abdome agudo perfurativo</div><div><span>Anatômico</span>Duodeno/estômago → peritônio</div><div><span>Etiológico</span>Úlcera péptica perfurada</div><div><span>Funcional</span>Perfuração de víscera oca</div></div>
+      <p class="sinal"><span class="lab">Na imagem</span><b>Ar livre subdiafragmático</b> (crescente lucente entre diafragma e fígado).</p>
+      <div class="blk"><span class="lab">Fisiopatologia</span><p class="fis">A perfuração de víscera oca lança ar e conteúdo na cavidade → <b>peritonite</b>. A <b>úlcera duodenal</b> perfura mais (parede anterior fina) e é mais frequente que a gástrica.</p></div>
+      <div class="two">
+        <div class="blk"><span class="lab">Sintomas</span><ul><li>Dor abdominal <b>súbita e intensa</b> (“em punhalada”)</li><li>Piora com o movimento</li></ul></div>
+        <div class="blk"><span class="lab">Sinais</span><ul><li><b>Sinal de Jobert</b> (perde-se a macicez hepática → timpanismo)</li><li>Blumberg positivo; abdome “em tábua” (defesa)</li></ul></div>
+      </div>
+      <div class="blk comp"><span class="lab">Complicações</span><ul><li>Peritonite difusa, sepse, choque e óbito</li></ul></div>
+      
+      <div class="blk"><span class="lab">Diagnósticos</span><div class="dx"><div><span>Sindrômico</span>Abdome agudo perfurativo</div><div><span>Anatômico</span>Duodeno/estômago → peritônio</div><div><span>Etiológico</span>Úlcera péptica perfurada</div><div><span>Funcional</span>Perfuração de víscera oca</div></div></div>
     </div>
   </div>
 </article>
 <article class="case" id="caso8">
-  <div class="chead"><span class="cn">8</span><h2>Abdome agudo — desfecho</h2><span class="tag">Conceito</span></div>
+  <div class="chead"><span class="cn">8</span><h2>Abdome agudo — substrato final</h2><span class="tag">Conceito integrador</span></div>
   <div class="cgrid">
     <figure class="cimg"><svg viewBox="0 0 280 200" class="scan"><g fill="none" stroke="#cdd8d5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="10" width="256" height="180" rx="16" stroke="#3a4a47"/><path d="M60 60 Q60 40 100 40 L180 40 Q220 40 220 60 L220 78 Q220 96 180 96 L100 96 Q60 96 60 78 Z" stroke-width="4"/><path d="M74 60 Q74 54 100 54 L180 54 Q206 54 206 60 L206 76 Q206 82 180 82 L100 82 Q74 82 74 76 Z"/><path d="M60 116 Q60 100 100 100 L180 100 Q220 100 220 116 L220 150 Q220 166 180 166 L100 166 Q60 166 60 150 Z" stroke-width="4"/><path d="M74 116 Q74 108 100 108 L180 108 Q206 108 206 116 L206 148 Q206 156 180 156 L100 156 Q74 156 74 148 Z"/></g></svg></figure>
     <div class="cbody">
-      <p class="sinal"><span class="lab">Na imagem</span>O <b>substrato final do abdome agudo é a inflamação (peritonite)</b> — e é por ela que o paciente pode morrer.</p>
-      <div class="blk"><span class="lab">Caso / clínica</span><ul><li>Reforço do conceito: qualquer abdome agudo não tratado converge para inflamação peritoneal e sepse.</li></ul></div>
-      <div class="blk"><span class="lab">Pontos-chave</span><ul><li>Por isso a conduta é tempo-dependente.</li></ul></div>
-      <div class="dx"><div><span>Sindrômico</span>Abdome agudo</div><div><span>Anatômico</span>Peritônio (peritonite)</div><div><span>Etiológico</span>Obstrutiva / inflamatória / perfurativa / vascular</div><div><span>Funcional</span>Resposta inflamatória → sepse</div></div>
+      <p class="sinal"><span class="lab">Na imagem</span>Alças com <b>parede espessada e inflamada</b> — o substrato final do abdome agudo é a <b>inflamação (peritonite)</b>.</p>
+      <div class="blk"><span class="lab">Fisiopatologia</span><p class="fis">Qualquer abdome agudo (obstrutivo, inflamatório, perfurativo ou vascular), se não tratado, <b>converge para inflamação peritoneal → sepse</b>, e é por isso que o paciente pode morrer.</p></div>
+      <div class="two">
+        <div class="blk"><span class="lab">Sintomas</span><ul><li>Dor abdominal + sinais sistêmicos (febre, taquicardia, mal-estar)</li></ul></div>
+        <div class="blk"><span class="lab">Sinais</span><ul><li>Irritação peritoneal (Blumberg, defesa/abdome em tábua)</li></ul></div>
+      </div>
+      <div class="blk comp"><span class="lab">Complicações</span><ul><li>Sepse, falência de múltiplos órgãos, óbito — por isso a conduta é <b>tempo-dependente</b></li></ul></div>
+      
+      <div class="blk"><span class="lab">Diagnósticos</span><div class="dx"><div><span>Sindrômico</span>Abdome agudo</div><div><span>Anatômico</span>Peritônio (peritonite)</div><div><span>Etiológico</span>Obstrutiva / inflamatória / perfurativa / vascular</div><div><span>Funcional</span>Resposta inflamatória → sepse</div></div></div>
     </div>
   </div>
 </article>
@@ -151,10 +196,15 @@
   <div class="cgrid">
     <figure class="cimg"><svg viewBox="0 0 280 200" class="scan"><g fill="none" stroke="#8fa39e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="140" cy="105" r="88" fill="none" stroke="#8fa39e" stroke-width="2"/></g><path d="M76 114 Q140 90 204 112" fill="none" stroke="#7d8d89" stroke-width="5"/><g stroke="none" fill="#eef2f0"><circle cx="98" cy="106" r="3.1"/><circle cx="118" cy="99" r="2.8"/><circle cx="140" cy="96" r="3.2"/><circle cx="162" cy="99" r="2.8"/><circle cx="184" cy="106" r="3"/></g><rect x="128" y="150" width="24" height="22" rx="4" fill="#e8eeec" stroke="none"/></svg></figure>
     <div class="cbody">
-      <p class="sinal"><span class="lab">Na imagem</span><b>Calcificações / cálculo “em rolha”</b> no pâncreas (diagnóstico anatômico pela calcificação). Ácinos em volta do tecido fibroso.</p>
-      <div class="blk"><span class="lab">Caso / clínica</span><ul><li><b>Pancreatite crônica</b>: causa mais frequente <b>etilismo</b>. História típica em ~4 tempos: empachamento → dor em faixa em cólica → dor em pontada → náuseas.</li><li><b>Pancreatite aguda</b>: causa mais frequente <b>litíase de vias biliares</b> (obstrução). A crônica pode <b>agudizar</b>.</li><li>O álcool agride os tecidos → necrose → fibrose → cálculos.</li></ul></div>
-      <div class="blk"><span class="lab">Pontos-chave</span><ul><li>Necrose dos ácinos → liberam enzimas → fibrose → <b>pseudocisto</b> (cápsula com conteúdo purulento que pode romper).</li><li><b>Tomografia</b> para ver; o ultrassom não vê bem o pâncreas (mas vê a aguda e é excelente p/ vias biliares). Na aguda: pâncreas edemaciado e “liso”.</li><li><b>Rolha proteica</b>; o cálcio diminui pela <b>saponificação</b> (consumo na necrose gordurosa).</li><li><b>Câncer de pâncreas</b>: vesícula palpável + icterícia = <b>sinal de Courvoisier-Terrier</b> (câncer de cabeça do pâncreas ou tumor de vesícula). Icterícia <b>verdínica</b> = obstrução; <b>flavínica</b> = hemólise (fica anêmico junto).</li><li><b>Colelitíase</b> (ultrassom e tomografia): lembrar a <b>dor da úlcera em 3 tempos</b> como diferencial de dor alta.</li></ul></div>
-      <div class="dx"><div><span>Sindrômico</span>Dor abdominal alta / icterícia</div><div><span>Anatômico</span>Pâncreas (ácinos/ductos) · cabeça no câncer</div><div><span>Etiológico</span>Álcool (crônica) · cálculo (aguda) · adenocarcinoma</div><div><span>Funcional</span>Insuficiência exócrina/endócrina; obstrução biliar</div></div>
+      <p class="sinal"><span class="lab">Na imagem</span><b>Calcificações / cálculo “em rolha”</b> no pâncreas (diagnóstico anatômico pela calcificação); ácinos em volta do tecido fibroso. Na aguda: pâncreas edemaciado e “liso”.</p>
+      <div class="blk"><span class="lab">Fisiopatologia</span><p class="fis"><b>Aguda</b>: ativação intraglandular das enzimas → <b>autodigestão</b> → necrose gordurosa (a <b>saponificação consome cálcio</b> → hipocalcemia) e hemorrágica; causa mais comum = <b>litíase biliar</b> (obstrução), depois álcool. <b>Crônica</b>: agressão repetida (<b>álcool</b>) → necrose → <b>fibrose progressiva</b> → calcificações e cálculos (<b>rolha proteica</b> que calcifica); a crônica pode <b>agudizar</b>. O <b>câncer de cabeça</b> obstrui a via biliar → icterícia.</p></div>
+      <div class="two">
+        <div class="blk"><span class="lab">Sintomas</span><ul><li>Dor epigástrica <b>em faixa, irradiada ao dorso</b>, náuseas/vômitos</li><li>História em ~4 tempos: empachamento → dor em faixa em cólica → dor em pontada → náuseas</li><li>No câncer: icterícia e emagrecimento</li></ul></div>
+        <div class="blk"><span class="lab">Sinais</span><ul><li><b>Sinal de Courvoisier-Terrier</b> (vesícula palpável indolor + icterícia) no câncer de cabeça/tumor de vesícula</li><li>Icterícia <b>verdínica</b> (obstrução) × <b>flavínica</b> (hemólise, com anemia)</li><li>Na aguda grave: sinais de Cullen e Grey-Turner</li></ul></div>
+      </div>
+      <div class="blk comp"><span class="lab">Complicações</span><ul><li><b>Pseudocisto</b> (cápsula com conteúdo purulento que pode romper), necrose infectada/abscesso</li><li>Insuficiência pancreática (esteatorreia, diabetes), hipocalcemia</li></ul></div>
+      <p class="extra"><b>Exame:</b> <b>tomografia</b> para ver o pâncreas (o ultrassom não o vê bem, mas vê a aguda e é excelente para <b>vias biliares</b>). <b>Colelitíase</b> no ultrassom/tomografia; lembrar a <b>dor da úlcera em 3 tempos</b> como diferencial de dor alta.</p>
+      <div class="blk"><span class="lab">Diagnósticos</span><div class="dx"><div><span>Sindrômico</span>Dor abdominal alta / icterícia</div><div><span>Anatômico</span>Pâncreas (ácinos/ductos); cabeça no câncer</div><div><span>Etiológico</span>Álcool (crônica) · cálculo (aguda) · adenocarcinoma</div><div><span>Funcional</span>Insuficiência exócrina/endócrina; obstrução biliar</div></div></div>
     </div>
   </div>
 </article>
@@ -163,10 +213,15 @@
   <div class="cgrid">
     <figure class="cimg"><svg viewBox="0 0 280 200" class="scan"><g fill="none" stroke="#8fa39e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="140" cy="105" r="88" fill="none" stroke="#8fa39e" stroke-width="2"/></g><path d="M60 66 Q120 54 150 78 Q158 120 120 150 Q78 150 60 118 Z" fill="#39423f" stroke="#8fa39e" stroke-width="2"/><path d="M196 84 Q222 82 224 108 Q224 134 198 138 Q180 128 182 106 Q184 88 196 84 Z" fill="#93a19d" stroke="#8fa39e" stroke-width="2"/><text x="98" y="112" fill="#e8eeec" font-size="16" stroke="none">F</text><text x="200" y="116" fill="#0c1212" font-size="16" stroke="none">B</text><rect x="128" y="150" width="24" height="22" rx="4" fill="#e8eeec" stroke="none"/></svg></figure>
     <div class="cbody">
-      <p class="sinal"><span class="lab">Na imagem</span>O <b>baço fica mais branco que o fígado</b> (normalmente teriam a mesma cor). Fígado <b>mais escuro</b> = <b>esteatose</b>.</p>
-      <div class="blk"><span class="lab">Caso / clínica</span><ul><li>Fígado <b>grande</b> (na imagem chega até o lado esquerdo). À palpação: <b>não doloroso</b>, firme, superfície lisa, borda romba.</li><li>Fatores de risco: <b>obesidade, etilismo, diabetes, desnutrição</b>.</li></ul></div>
-      <div class="blk"><span class="lab">Pontos-chave</span><ul><li><b>Congestão hepática costuma ser dolorida; a esteatose não.</b></li><li>Esteatose <b>não mata</b>, a não ser que vire tóxica → <b>necrose do hepatócito</b> (esteato-hepatite).</li><li>Macro: fígado alaranjado; gordura empurra o núcleo; na hepatite alcoólica há <b>corpúsculos de Mallory</b>.</li></ul></div>
-      <div class="dx"><div><span>Sindrômico</span>Hepatomegalia</div><div><span>Anatômico</span>Fígado (esteatose)</div><div><span>Etiológico</span>Álcool, diabetes, obesidade, desnutrição</div><div><span>Funcional</span>Em geral função preservada (salvo esteato-hepatite)</div></div>
+      <p class="sinal"><span class="lab">Na imagem</span>O <b>baço fica mais branco que o fígado</b> (deveriam ter a mesma cor). Fígado <b>mais escuro/hipodenso</b> = <b>esteatose</b>.</p>
+      <div class="blk"><span class="lab">Fisiopatologia</span><p class="fis">Acúmulo de <b>gordura (triglicerídeos)</b> nos hepatócitos — vacúolos que empurram o núcleo — reduzindo a densidade na tomografia. É <b>reversível</b>.</p></div>
+      <div class="two">
+        <div class="blk"><span class="lab">Sintomas</span><ul><li>Em geral <b>assintomática</b></li><li>Desconforto em hipocôndrio direito; hepatomegalia</li></ul></div>
+        <div class="blk"><span class="lab">Sinais</span><ul><li>Fígado <b>grande</b> (chega ao lado esquerdo), <b>não doloroso</b>, firme, superfície lisa, borda romba</li><li>Fatores de risco: <b>obesidade, etilismo, diabetes, desnutrição</b></li><li>(<b>Congestão</b> hepática costuma ser <b>dolorida</b>; a esteatose não)</li></ul></div>
+      </div>
+      <div class="blk comp"><span class="lab">Complicações</span><ul><li><b>Esteato-hepatite</b> (inflamação → necrose do hepatócito; corpúsculos de Mallory na alcoólica) → fibrose → <b>cirrose</b></li></ul></div>
+      
+      <div class="blk"><span class="lab">Diagnósticos</span><div class="dx"><div><span>Sindrômico</span>Hepatomegalia</div><div><span>Anatômico</span>Fígado (esteatose)</div><div><span>Etiológico</span>Álcool, diabetes, obesidade, desnutrição</div><div><span>Funcional</span>Função preservada (salvo esteato-hepatite)</div></div></div>
     </div>
   </div>
 </article>
@@ -175,10 +230,15 @@
   <div class="cgrid">
     <figure class="cimg"><svg viewBox="0 0 280 200" class="scan"><g fill="none" stroke="#8fa39e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="140" cy="105" r="88" fill="none" stroke="#8fa39e" stroke-width="2"/><path d="M56 118 Q52 96 220 96 Q224 118 220 150" stroke="#5b6b67" stroke-width="1.6"/></g><path d="M60 64 Q92 58 108 70 Q100 78 116 82 Q104 92 120 98 Q108 108 122 116 Q96 140 68 128 Q54 96 60 64 Z" fill="#6f7e7a" stroke="#8fa39e" stroke-width="2"/><path d="M198 78 Q230 78 232 112 Q232 146 200 150 Q176 136 178 106 Q182 84 198 78 Z" fill="#93a19d" stroke="#8fa39e" stroke-width="2"/><path d="M150 150 q6 -8 0 -16 q-6 -8 0 -16" fill="none" stroke="#c9d6d2" stroke-width="2"/><rect x="128" y="150" width="24" height="22" rx="4" fill="#e8eeec" stroke="none"/></svg></figure>
     <div class="cbody">
-      <p class="sinal"><span class="lab">Na imagem</span><b>Superfície irregular / nodular</b> do fígado (nódulos de regeneração + fibrose). Diagnóstico anatômico: <b>cirrose</b>. Na tomografia dá para ver a <b>ascite</b> antes do fígado.</p>
-      <div class="blk"><span class="lab">Caso / clínica</span><ul><li><b>Síndrome hepatocítica</b> (insuficiência): aranha vascular (spider), ginecomastia, <b>eritema palmar</b> (palma hiperemiada), sangramento gengival, paciente cheio de hematomas.</li><li>Diagnósticos <b>funcionais</b>: <b>encefalopatia hepática</b> e <b>hipertensão porta</b>.</li></ul></div>
-      <div class="blk"><span class="lab">Pontos-chave</span><ul><li><b>Tríade da hipertensão porta</b>: circulação colateral + ascite + hepato/esplenomegalia. Varizes de esôfago → principal sintoma: <b>hematêmese</b>.</li><li>Com ascite: <b>palpar o fígado pelo rechaço</b> (balotamento) e <b>não palpar o baço</b> da forma habitual.</li><li><b>Descrever a palpação do fígado</b>: se está palpável e o local, <b>superfície</b> (lisa/irregular), <b>borda</b> (lisa/romba), <b>dor</b> e <b>consistência</b>. Histologia: fibrose em volta dos nódulos.</li></ul></div>
-      <div class="dx"><div><span>Sindrômico</span>Insuficiência hepática + hipertensão porta</div><div><span>Anatômico</span>Fígado (cirrose nodular)</div><div><span>Etiológico</span>Álcool, hepatites, etc.</div><div><span>Funcional</span>Encefalopatia, ascite, varizes</div></div>
+      <p class="sinal"><span class="lab">Na imagem</span>Fígado de <b>superfície nodular</b> (nódulos de regeneração + fibrose). Na tomografia dá para ver a <b>ascite</b> antes do fígado.</p>
+      <div class="blk"><span class="lab">Fisiopatologia</span><p class="fis">Necrose crônica + <b>fibrose</b> + nódulos de regeneração <b>distorcem a arquitetura</b> → dois problemas: (1) <b>insuficiência hepatocelular</b> e (2) <b>hipertensão porta</b> (aumento da resistência ao fluxo) → circulação colateral (varizes), ascite e esplenomegalia.</p></div>
+      <div class="two">
+        <div class="blk"><span class="lab">Sintomas</span><ul><li>Astenia, icterícia, aumento do volume abdominal (ascite)</li><li><b>Hematêmese</b> (varizes de esôfago), confusão (encefalopatia)</li></ul></div>
+        <div class="blk"><span class="lab">Sinais</span><ul><li><b>Síndrome hepatocítica</b>: aranha vascular (spider), ginecomastia, <b>eritema palmar</b>, sangramento gengival, hematomas</li><li><b>Tríade da hipertensão porta</b>: circulação colateral + ascite + esplenomegalia</li><li>Ascite: macicez móvel e piparote; palpar o fígado <b>pelo rechaço</b> e <b>não</b> palpar o baço</li></ul></div>
+      </div>
+      <div class="blk comp"><span class="lab">Complicações</span><ul><li><b>Hemorragia por varizes</b> (hematêmese)</li><li><b>Encefalopatia hepática</b>, peritonite bacteriana espontânea</li><li>Síndrome hepatorrenal, carcinoma hepatocelular</li></ul></div>
+      <p class="extra"><b>Descrever a palpação do fígado:</b> se está palpável e o local (linha hemiclavicular), <b>superfície</b> (lisa/irregular), <b>borda</b> (lisa/romba), <b>dor</b> e <b>consistência</b>. Histologia: nódulos com fibrose em volta.</p>
+      <div class="blk"><span class="lab">Diagnósticos</span><div class="dx"><div><span>Sindrômico</span>Insuficiência hepática + hipertensão porta</div><div><span>Anatômico</span>Fígado (cirrose nodular)</div><div><span>Etiológico</span>Álcool, hepatites virais, etc.</div><div><span>Funcional</span>Encefalopatia, ascite, varizes</div></div></div>
     </div>
   </div>
 </article>
@@ -187,10 +247,15 @@
   <div class="cgrid">
     <figure class="cimg"><svg viewBox="0 0 280 200" class="scan"><g fill="none" stroke="#8fa39e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="140" cy="105" r="88" fill="none" stroke="#8fa39e" stroke-width="2"/></g><path d="M196 70 Q232 72 234 110 Q234 150 198 154 Q172 138 174 104 Q178 78 196 70 Z" fill="#8b9a96" stroke="#8fa39e" stroke-width="2"/><path d="M198 78 L214 104 L196 112 Z" fill="#22302d" stroke="none"/><circle cx="212" cy="128" r="10" fill="#20302c" stroke="#cfd9d6"/><path d="M60 70 Q120 60 150 82 Q156 118 122 146 Q80 146 60 116 Z" fill="#6f7e7a" stroke="#8fa39e" stroke-width="2"/><rect x="128" y="150" width="24" height="22" rx="4" fill="#e8eeec" stroke="none"/></svg></figure>
     <div class="cbody">
-      <p class="sinal"><span class="lab">Na imagem</span>No baço, <b>áreas de menor densidade</b> = <b>infarto séptico</b> que pode formar <b>abscesso</b>. No coração, <b>vegetação</b> (trombo infectado) na valva mitral, ventrículo esquerdo espessado.</p>
-      <div class="blk"><span class="lab">Caso / clínica</span><ul><li>O êmbolo (vegetação) se solta e vai para o <b>baço</b>, causando <b>infarto</b>.</li><li>Regra: <b>todo paciente com endocardite → investigar o baço</b>.</li></ul></div>
-      <div class="blk"><span class="lab">Pontos-chave</span><ul><li><b>Insuficiência cardíaca não dá ascite</b> por si só; apenas no caso grave, que leva a hipertensão porta e então ascite.</li></ul></div>
-      <div class="dx"><div><span>Sindrômico</span>Febre + fenômeno embólico</div><div><span>Anatômico</span>Baço (infarto/abscesso) · valva mitral</div><div><span>Etiológico</span>Endocardite infecciosa</div><div><span>Funcional</span>Embolia séptica</div></div>
+      <p class="sinal"><span class="lab">Na imagem</span>No baço, <b>áreas de menor densidade</b> = infarto séptico (pode virar <b>abscesso</b>). No coração, <b>vegetação</b> (trombo infectado) na valva mitral, ventrículo esquerdo espessado.</p>
+      <div class="blk"><span class="lab">Fisiopatologia</span><p class="fis">A <b>endocardite infecciosa</b> forma vegetações na valva → <b>embolização séptica</b> → o êmbolo vai ao <b>baço</b> → <b>infarto</b>, que pode infectar e formar <b>abscesso</b>.</p></div>
+      <div class="two">
+        <div class="blk"><span class="lab">Sintomas</span><ul><li>Febre e mal-estar</li><li>Dor no hipocôndrio/flanco esquerdo</li></ul></div>
+        <div class="blk"><span class="lab">Sinais</span><ul><li>Sopro cardíaco (novo), esplenomegalia dolorosa</li><li>Fenômenos embólicos</li></ul></div>
+      </div>
+      <div class="blk comp"><span class="lab">Complicações</span><ul><li>Abscesso esplênico</li><li>Êmbolos em outros órgãos (rim, cérebro), insuficiência valvar</li></ul></div>
+      <p class="extra"><b>Insuficiência cardíaca não dá ascite</b> por si só; apenas no caso grave, que leva a hipertensão porta e então ascite.</p>
+      <div class="blk"><span class="lab">Diagnósticos</span><div class="dx"><div><span>Sindrômico</span>Febre + fenômeno embólico</div><div><span>Anatômico</span>Baço (infarto/abscesso) · valva mitral</div><div><span>Etiológico</span>Endocardite infecciosa</div><div><span>Funcional</span>Embolia séptica</div></div></div>
     </div>
   </div>
 </article>
